@@ -9,11 +9,6 @@ const Navigation = () => {
       name: 'Home',
       to: '/',
       exact: true
-    },
-    {
-      name: 'Dashboard',
-      to: '/dashboard',
-      exact: false
     }
   ];
 
@@ -33,7 +28,7 @@ const Navigation = () => {
             </NavLink>
           </h1>
         </div>
-        <div className='flex-1 flex justify-end text-lg'>
+        <div className='flex-1 flex justify-end font-rubik'>
           <ul className='flex justify-evenly tracking-tight'>
             {navLinks.map(({ exact, name, to }, i) => (
               <li className='h-full' key={i}>

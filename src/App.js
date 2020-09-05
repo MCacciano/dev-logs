@@ -5,19 +5,19 @@ import './App.css';
 
 // pages
 import Home from './pages/Home';
+import Developer from './pages/Developer';
 
 // components
 import Navigation from './components/Navigation';
-import Dashboard from './pages/Dashboard/Dashboard';
 
 const App = () => {
   return (
     <div className='font-roboto'>
       <Navigation />
-      <div style={{ height: 'calc(100vh - 3rem)' }}>
+      <div style={{ minHeight: 'calc(100vh - 3rem)' }}>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/dashboard' component={Dashboard} />
+          <Route path='/developers/:name' component={Developer} />
         </Switch>
       </div>
     </div>
