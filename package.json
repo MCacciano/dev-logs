@@ -1,20 +1,29 @@
 {
-  "name": "react-thexiv",
+  "name": "dev-logs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.20.0",
+    "firebase": "^7.19.1",
+    "postcss-cli": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-player": "^2.6.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "tailwindcss": "^1.8.2",
+    "xivapi-js": "^0.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:styles": "postcss ./src/tailwind.css -o ./src/App.css"
   },
   "eslintConfig": {
     "extends": "react-app"
