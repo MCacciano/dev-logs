@@ -8,7 +8,6 @@ const VideoList = ({ videos, developer }) => {
   const [active, setActive] = useState('');
 
   useEffect(() => {
-    console.log('dev', developer);
     if (videos.length > 0) {
       setActive(videos[0].snippet.resourceId.videoId);
     }
