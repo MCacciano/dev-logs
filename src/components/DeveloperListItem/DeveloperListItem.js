@@ -9,7 +9,11 @@ const DeveloperListItem = ({ developer }) => (
       className='flex flex-col h-full'
     >
       <div className='flex-1'>
-        <img className='w-full object-cover' src={developer.snippet.thumbnails.medium.url} />
+        <img
+          className='w-full object-cover'
+          src={developer.snippet.thumbnails.medium.url}
+          alt={developer.snippet.title}
+        />
       </div>
       <div className='flex-1 flex flex-col p-4'>
         <h1>{developer.snippet.title}</h1>

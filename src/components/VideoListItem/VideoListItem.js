@@ -5,7 +5,11 @@ const VideoListItem = ({ video, onClick }) => {
   return (
     <li className='flex flex-col border border-black rounded shadow' onClick={onClick}>
       <div className='flex-1'>
-        <img className='w-full h-full object-cover' src={video.snippet.thumbnails.medium.url} />
+        <img
+          className='w-full h-full object-cover'
+          src={video.snippet.thumbnails.medium.url}
+          alt={video.snippet.title}
+        />
       </div>
       <div className='flex-1 flex flex-col p-4'>
         <h1 className='text-lg'>{video.snippet.title}</h1>
