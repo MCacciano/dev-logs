@@ -11,6 +11,7 @@ import Developer from './pages/Developer';
 import Navigation from './components/Navigation';
 
 const App = () => {
+  // tresting something
   return (
     <div className='font-roboto'>
       <Navigation />
