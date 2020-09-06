@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import ReactPlayer from 'react-player/youtube';
 
 import VideoListItem from '../VideoListItem/';
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
@@ -13,14 +12,6 @@ const VideoList = ({ videos, developer }) => {
       setActive(videos[0].snippet.resourceId.videoId);
     }
   }, [videos]);
-
-  const ytPlayerConfig = {
-    url: `https://www.youtube.com/watch?v=${active}`,
-    controls: true,
-    height: '100%',
-    width: '100%',
-    className: 'absolute top-0 left-0 max-h-full'
-  };
 
   return (
     <>
