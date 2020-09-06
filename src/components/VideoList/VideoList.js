@@ -32,8 +32,8 @@ const VideoList = ({ videos, developer }) => {
         </div>
       </div>
       <div className='flex flex-col items-center my-5'>
-        <div className='flex w-full max-w-screen-lg mx-5'>
-          <div>
+        <div className='flex flex-col md:flex-row w-full max-w-screen-lg mx-5'>
+          <div className='flex justify-center md:block'>
             <button
               className='border border-black rounded shadow py-1 px-2 focus:outline-none active:outline-none'
               onClick={() => setShow(!show)}
