@@ -15,12 +15,10 @@ const App = () => {
   return (
     <div className='font-roboto'>
       <Navigation />
-      <div style={{ minHeight: 'calc(100vh - 3rem)' }}>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/developers/:name' component={Developer} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/developers/:name' component={Developer} />
+      </Switch>
     </div>
   );
 };

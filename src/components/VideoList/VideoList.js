@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import ReactPlayer from 'react-player/youtube';
 
 import VideoListItem from '../VideoListItem/';
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
@@ -13,9 +14,21 @@ const VideoList = ({ videos, developer }) => {
     }
   }, [videos]);
 
+  const ytPlayerConfig = {
+    url: `https://www.youtube.com/watch?v=${active}`,
+    controls: true,
+    height: '100%',
+    width: '100%',
+    className: 'absolute top-0 left-0 max-h-full'
+  };
+
   return (
-    <div className='flex flex-col'>
-      <VideoPlayer url={`https://www.youtube.com/watch?v=${active}`} />
+    <>
+      <div className='flex justify-center bg-black'>
+        <div className='w-full max-w-screen-md'>
+          <VideoPlayer url={`https://www.youtube.com/watch?v=${active}`} />
+        </div>
+      </div>
       <div className='flex flex-col items-center my-5'>
         <div className='flex px-2'>
           <h2 className='text-3xl font-semibold font-rubik mx-2'>{developer.snippet.title}</h2>
@@ -40,7 +53,7 @@ const VideoList = ({ videos, developer }) => {
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 
