@@ -16,7 +16,7 @@ const DeveloperList = ({ devs }) => {
   });
 
   return (
-    <ul className='flex gap-5 m-10'>
+    <ul className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 m-10'>
       {devs.map(dev => {
         return (
           <DeveloperListItem
