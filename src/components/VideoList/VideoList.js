@@ -9,7 +9,6 @@ const VideoList = ({ videos, title }) => {
 
   useEffect(() => {
     if (videos.length > 0) {
-      console.log('videos', videos[0].snippet.resourceId.videoId);
       setActive(videos[0].snippet.resourceId.videoId);
     }
   }, [videos]);

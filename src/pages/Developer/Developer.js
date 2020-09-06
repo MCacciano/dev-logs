@@ -27,7 +27,7 @@ const Developer = () => {
     };
 
     getDeveloperVideos();
-  }, []);
+  }, [location]);
 
   return <VideoList videos={videos} title={location.state.developer.snippet.title} />;
 };

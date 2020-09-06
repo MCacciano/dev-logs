@@ -39,7 +39,7 @@ const Home = () => {
     };
 
     asyncGetDevChannels();
-  }, []);
+  }, [ids]);
 
   return (
     <>
