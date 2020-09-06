@@ -15,16 +15,8 @@ const DeveloperListItem = ({ developer }) => (
           alt={developer.snippet.title}
         />
       </div>
-      <div className='flex-1 flex flex-col p-4'>
+      <div className='flex justify-center p-4 font-rubik text-lg'>
         <h1>{developer.snippet.title}</h1>
-        {developer.snippet.description !== '' ? (
-          <p className='mt-4'>
-            {developer.snippet.description
-              .split(' ')
-              .map((des, i) => (i < 10 ? des : null))
-              .join(' ')}
-          </p>
-        ) : null}
       </div>
     </Link>
   </li>
