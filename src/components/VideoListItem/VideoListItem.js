@@ -23,14 +23,14 @@ const VideoListItem = ({ video, onClick }) => {
       </div>
       <div className='flex-1 flex flex-col p-4'>
         <h1 className='text-lg'>{video.snippet.title}</h1>
-        {video.snippet.description !== '' ? (
+        {/* {video.snippet.description !== '' ? (
           <p className='mt-4 text-md font-light'>
             {video.snippet.description
               .split(' ')
               .map((des, i) => (i < 20 ? des : null))
               .join(' ')}
           </p>
-        ) : null}
+        ) : null} */}
       </div>
     </li>
   );
