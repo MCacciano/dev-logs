@@ -29,7 +29,7 @@ const Developer = () => {
     getDeveloperVideos();
   }, [location]);
 
-  return <VideoList videos={videos} title={location.state.developer.snippet.title} />;
+  return <VideoList videos={videos} developer={location.state.developer} />;
 };
 
 export default Developer;
